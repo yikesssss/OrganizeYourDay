@@ -1,0 +1,18 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+}
+
+#clock {
+    width: 40vh;
+    text-align: center;
+}
+
+#clock h1 {
+    font-size: 64px;
+}
