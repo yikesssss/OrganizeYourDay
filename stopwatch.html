@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="stopwatch.css" />
+  </head>
+
+  <body>
+    <div class="index">
+        <a href="index.html">Home</a>
+        <a href="timetable.html">Timetable</a>
+        <a href="settings.html">Settings</a>
+    </div>
+
+    <div class="countdown">
+        <h1>COUNTDOWN</h1>
+        <p id="countdown"></p>
+        <button id="countdownbtn" onclick="countdown()">
+            <p id="btnCount">START</p>
+        </button>
+    </div>
+
+    <div class="stopwatch">
+      <h1>STOPWATCH</h1>
+      <div class="circle">
+        <span class="time" id="display">00:00:00</span>
+      </div>
+
+      <div class="controls">
+        <button class="buttonPlay">
+          <p id="playButton">START</p>
+
+          <p id="pauseButton">STOP</p>
+        </button>
+
+        <button class="buttonReset">
+          <p id="resetButton">RESET</p>
+        </button>
+      </div>
+
+    </div>
+
+    <script src="stopwatch.js"></script>
+
+  </body>
+</html>

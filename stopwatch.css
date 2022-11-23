@@ -1,0 +1,88 @@
+body {
+    background-color: #a4a4a4;
+    color: #ffffff;
+}
+
+h1 {
+    font-size: 48px;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+    line-height: 59px;
+    padding: 0 64px;
+    margin: 0;
+}
+
+a {
+    color: #dcdcdc;
+}
+
+.index {
+    text-align: right;
+}
+
+.countdown {
+    display: grid;
+    justify-items: center;
+    grid-row-gap: 23px;
+    width: 50%;
+    float: left;
+    padding-top: 125px;
+}
+
+.stopwatch {
+    display: grid;
+    justify-items: center;
+    grid-row-gap: 23px;
+    width: 50%;
+    float: right;
+    padding-top: 125px;
+}
+
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 270px;
+    width: 270px;
+
+    border: 2px solid;
+    border-radius: 50%;
+}
+
+.time {
+    font-family: monospace;
+    font-weight: 300;
+    font-size: 48px;
+}
+
+p {
+    color: #ffffff;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    width: 187px;
+}
+
+button {
+    cursor: pointer;
+    background: transparent;
+    padding: 0;
+    border: none;
+    margin: 0;
+    outline: none;
+}
+
+#playButton {
+    display: block;
+}
+
+#pauseButton {
+    display: none;
+}
