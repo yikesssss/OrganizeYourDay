@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="time.js" type="text/javascript"></script>
+    <script src="time.js"></script>
     <title>Buddy</title>
 </head>
 <body>
     <nav>
         <div>Buddy</div>
-        <div>
+        <div class="index">
             <a href="index.html">Home</a>
             <a href="timetable.html">Timetable</a>
             <a href="settings.html">Settings</a>
@@ -20,8 +20,9 @@
 
     <div class="content">
         <div id="clock">
-            <h1 id="time" onload="myFunction()"></h1>
-            <button id="alarmStopwatch">alarm and stopwatch</button>
+            <h1 id="time" onclick="myFunction()">here</h1>
+            <a href="stopwatch.html" id="aands">Alarm and Stopwatch</a>
+            <!--button id="alarmStopwatch" onclick="alertfunction()">alarm and stopwatch</button-->
             <div id="musicPlayer">
                 <p>music</p>
             </div>
@@ -30,9 +31,6 @@
             <h2>To do list:</h2>
         </div>
     </div>
-    
-
-    
     
 </body>
 </html>
