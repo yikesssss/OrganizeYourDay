@@ -4,18 +4,20 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="todolist.css" />
+<script src="todolist.js"></script>
 </head>
 <body>
 
 <div id="myDIV" class="header">
   <h2 style="margin:5px">My To Do List</h2>
-  <input type="text" id="myInput" placeholder="Title...">
 
-  <button onclick="ToDoElement()" class="addtolist">Add</botton>
+  <form id="todoInput" >
+  <button type="button" onclick="ToDoElement()">Add</botton>
+    </form>
+  <ol id="toDolist"></ol>
 </div>
 
-<ul id="myUL"> <li></li>
-</ul>
+
 
 
 </body>
