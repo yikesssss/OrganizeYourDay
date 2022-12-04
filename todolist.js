@@ -1,5 +1,3 @@
-
-
 function ToDoElement(){
   var item = document.getElementById("todoInput")
   var text = document.createTextNode(item)
