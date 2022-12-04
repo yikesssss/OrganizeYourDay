@@ -1,0 +1,42 @@
+table {
+    border-collapse: collapse;
+    border: none;
+}
+
+tr {
+    border-bottom: 1px solid grey;
+    /* background-color: lightblue; */
+}
+
+td {
+    border-right: solid black 1px;
+    padding: 0.2em;
+    width: 5em;
+    text-align: center;
+    /* margin: 0; */
+}
+
+td.selected {
+    background-color: violet;
+}
+
+td:hover {
+    background-color: lightblue;
+}
+
+tr:first-child{
+    border-bottom: black solid 1px;
+}
+
+tr:last-child {
+    border: none;
+}
+
+td:last-child {
+    border: none;
+}
+
+td:first-child {
+    width: 3em;
+    /* text-align:left; */
+}
