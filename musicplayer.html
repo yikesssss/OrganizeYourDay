@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Music</title>
+  <link rel="stylesheet" type="text/css" href="musicplayer.css">
+  <script src="musicplayer.js"></script>
+</head>
+<body>
+  <div class="player">
+    <div class="Music">
+      <div class="now-playing">Music player</div>
+    </div>
+
+ <button class="playpause-track" onclick="Playmusic()">Play Music</button>
+        <i class="fa fa-play-circle fa-5x"></i>
+      </div>
+
+   <div class="slider_container">
+      <div class="current-time">00:00</div>
+      <input type="range" min="1" max="100"
+        value="0" class="seek_slider" onchange="TimeRange()">
+      <div class="total-duration">00:00</div>
+    </div>
+
+</body>
+</html>
