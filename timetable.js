@@ -1,3 +1,7 @@
+var isEdit = false;
+var isDone = true;
+var isaddText = false;
+var isTimeB = false;
 
 function createTimetable() {
     var a = 8;
@@ -35,40 +39,68 @@ function createTimetable() {
     var b = document.getElementById('schedule')
     b.appendChild(newTable);
 
-    var tabEl = document.querySelector('table');
-    tabEl.addEventListener('click', selectSlot);
+    var doneBtn = document.getElementById('donebtn');
+    doneBtn.addEventListener('click', () => {
+        isDone = true;
+        isEdit = false;
+    })
 
-    //function addText() {} coming soon...
+    var editBtn = document.getElementById('editbtn');
+    editBtn.addEventListener('click', () => {
+        isEdit = true;
+        isDone = false;
+    })
+    
+
+    var addTextbtn = document.getElementById('addtextbtn');
+    addTextbtn.addEventListener('click', () => {
+        isaddText = true;
+        isTimeB = false;
+    })
+
+    var addSlot = document.getElementById('blockbtn');
+    addSlot.addEventListener('click', () => {
+        isTimeB = true;
+        isaddText = false;
+    })
+
+    var tabEl = document.querySelector('table');
+    tabEl.addEventListener('click', clickAction);
 
 }
 
 
+function clickAction(e){
 
-function selectSlot(e){
-    var t = e.target; //gets the element that the mouse clicked on
-    var ident = t.id.split(' ') //divides the id into its row and column
-    
-    if(ident[1] != 0 && t.parentNode.id != 0) {
-        t.style.backgroundColor = 'red' //sets the cliked element whitin the table to set
-        // t.setAttribute('class', 'selected')
+    if(isDone == false && isEdit == true) {
+
+        var t = e.target; //gets the element that the mouse clicked on
+        var ident = t.id.split(' ') //divides the id into its row and column
+
+        if (ident[1] != 0 && t.parentNode.id != 0) {
+
+            if (isTimeB == true) {
+                t.className = 'selected'; //sets the cliked element whitin the table to set
+            }
+
+            if (isaddText == true && t.className == 'selected') {
+                t.setAttribute('contenteditable', 'true') //set the cell to be almost like a textbox
+            }
+        }
+    } else {
+        isEdit = false;
     }
 
 }
 
 
-
-
-
 window.addEventListener('load', (event)=> {
     createTimetable(); //initalises table
 
-    var reset = document.querySelector('button');
+    var reset = document.querySelector('#resetbtn');
     reset.addEventListener('click', () => {
         document.querySelector('table').remove(); //removes previous table
         createTimetable(); //replaces it with a new one
     })
     
 })
-
-
-
