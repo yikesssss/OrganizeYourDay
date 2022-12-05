@@ -20,15 +20,26 @@
             <a href="settings.html">Settings</a>
         </div>
     </nav>
-
+    <h2>Timetable</h2>
+    <p>To set up your timetable. First, press the edit button then which action you want. When done press the done button.
+        If you want to edit again press the edit button again. If you want to reset the table press the reset button</p>
     <div class="content">
-        <h2>Timetable</h2>
-        <button>reset timetable</button>
+        
         <div id="schedule"></div>
-        <!-- <p>double click on a box to add text</p> -->
+        <div class="btngroup">
+            <button id="editbtn">edit</button>
+            
+            
+            <div class="editingbtns">
+                <button id="blockbtn">add time blocks</button>
+                <button id="addtextbtn">add text</button>
+            </div>
+            
+            <button id="donebtn">done</button>
+            <button id="resetbtn">reset timetable</button>
+        </div>
+        
     </div>
-
-
 
     <script src="timetable.js"></script>
 </body>
