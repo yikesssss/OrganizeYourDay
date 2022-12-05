@@ -15,4 +15,4 @@ function loadTime() {
   var result = `${hour}:${minutes}:${seconds}`
 
   document.getElementById('time').innerHTML = result;
-}
+} 
