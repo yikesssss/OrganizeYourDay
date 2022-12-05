@@ -1,3 +1,11 @@
+h2, p {
+    text-align: center;
+}
+
+.content {
+    padding-top: 2%;
+}
+
 table {
     border-collapse: collapse;
     border: none;
@@ -5,7 +13,7 @@ table {
 
 tr {
     border-bottom: 1px solid grey;
-    /* background-color: lightblue; */
+
 }
 
 td {
@@ -13,11 +21,11 @@ td {
     padding: 0.2em;
     width: 5em;
     text-align: center;
-    /* margin: 0; */
+
 }
 
 td.selected {
-    background-color: violet;
+    background-color: #444343;
 }
 
 td:hover {
@@ -38,5 +46,5 @@ td:last-child {
 
 td:first-child {
     width: 3em;
-    /* text-align:left; */
+    
 }
