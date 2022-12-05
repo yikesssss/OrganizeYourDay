@@ -1,20 +1,26 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="todolist.css" />
-<script src="todolist.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="todolist.css" />
+  <script src="todolist.js"></script>
 </head>
+
 <body>
 
-<div id="myDIV" class="header">
-  <h2 style="margin:5px">My To Do List</h2>
-  <form id="todolist">
-    <input id="todoInput" type="text" placeholder="Title..."> 
-    <button type="button" onclick="ToDoElement()">Add</botton>
-  </form>
-    <ol id="toDolist"></ol>
-</div>
+  <div id="myDIV" class="header">
+    <h2 style="margin:5px">My To Do List</h2>
+    <form id="todolist">
+      <input id="todoInput" type="text" placeholder="Title...">
+      <button type="button" onclick="ToDoElement()">Add</botton> 
+    </form>
+  </div>
+
+  <ul>
+    <ol  id="list"  onclick="Task()"></ol>
+  </ul>
 
 </body>
+
 </html>
