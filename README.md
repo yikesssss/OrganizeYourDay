@@ -1,1 +1,2 @@
 # OrganizeYourDay
+Buddy✿ is a website that helps you organize your life and brings a smile to your day. It can play music in the background; create timers, reminders and notes; see the current time and view your timetable for the day. This is the perfect tool for busy students who need a way to organize their lives and eliminate distractions while studying. If you had a bad day, looking at Buddy’s encouraging smile and design will bring some joy. 
